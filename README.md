@@ -7,6 +7,10 @@ fall back to sensible light/dark defaults everywhere else (browser, tests, SSR).
 > A Vue counterpart to the React [`@telegram-apps/telegram-ui`](https://github.com/Telegram-Mini-Apps/TelegramUI).
 > No Tailwind or CSS framework required — every component ships its own scoped styles.
 
+<p align="center">
+  <img src="./assets/preview.svg" alt="vuegram components under light and dark Telegram themes" width="824" />
+</p>
+
 ## Install
 
 ```bash
