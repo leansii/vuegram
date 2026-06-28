@@ -1,0 +1,43 @@
+/*
+ * vuegram base styles. Telegram injects --tg-theme-* CSS variables on the root
+ * when the Mini App runs inside a client; these :root values are fallbacks so the
+ * components also render correctly in a browser, in tests, and before init.
+ */
+:root {
+  --tg-theme-bg-color: #ffffff;
+  --tg-theme-text-color: #000000;
+  --tg-theme-hint-color: #707579;
+  --tg-theme-link-color: #2481cc;
+  --tg-theme-button-color: #2481cc;
+  --tg-theme-button-text-color: #ffffff;
+  --tg-theme-secondary-bg-color: #efeff4;
+  --tg-theme-section-bg-color: #ffffff;
+  --tg-theme-section-separator-color: #e6e6e9;
+  --tg-theme-destructive-text-color: #cc2929;
+
+  --vg-radius: 12px;
+  --vg-radius-lg: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tg-theme-bg-color: #17212b;
+    --tg-theme-text-color: #ffffff;
+    --tg-theme-hint-color: #7d8b99;
+    --tg-theme-link-color: #6ab3f3;
+    --tg-theme-button-color: #5288c1;
+    --tg-theme-button-text-color: #ffffff;
+    --tg-theme-secondary-bg-color: #0e1621;
+    --tg-theme-section-bg-color: #17212b;
+    --tg-theme-section-separator-color: #101921;
+    --tg-theme-destructive-text-color: #ec3942;
+  }
+}
+
+.vg-root,
+.vg-app {
+  background-color: var(--tg-theme-secondary-bg-color);
+  color: var(--tg-theme-text-color);
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}

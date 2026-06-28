@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "types": ["vitest/globals"],
+    "baseUrl": ".",
+    "paths": {
+      "vuegram": ["./src/index.ts"]
+    }
+  },
+  "include": ["src", "playground"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "vuegram",
+  "version": "0.0.1",
+  "description": "Vue 3 component library for Telegram Mini Apps — native look via Telegram theme variables.",
+  "type": "module",
+  "license": "MIT",
+  "author": "leansii",
+  "homepage": "https://github.com/leansii/vuegram",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leansii/vuegram.git"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "telegram",
+    "telegram-mini-app",
+    "telegram-web-app",
+    "ui",
+    "components",
+    "component-library"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vuegram.cjs",
+  "module": "./dist/vuegram.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vuegram.js",
+      "require": "./dist/vuegram.cjs"
+    },
+    "./style.css": "./dist/vuegram.css"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -p tsconfig.build.json && vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write \"src/**/*.{ts,vue}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,vue}\""
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vite-plugin-dts": "^4.4.0",
+    "vitest": "^2.1.8",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.0"
+  }
+}
